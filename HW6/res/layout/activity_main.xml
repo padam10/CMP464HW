@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" >
+
+   <Button
+    android:id="@+id/btnWHouse"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="19dp"
+    android:onClick="onClick_WHouse"
+    android:text="Padam" />
+
+	<fragment 
+     android:id="@+id/map"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below = "@+id/btnWHouse"
+     android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+<Button
+    android:id="@+id/btnLehman"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:onClick="onClick_Lehman"
+    android:text="LehmanT" />
+
+ 
+
+ <Button
+     android:id="@+id/btnLehmanS"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_toLeftOf="@+id/btnWHouse"
+     android:onClick="onClick_LehmanS"
+     android:text="LehmanS" />
+
+</RelativeLayout>
